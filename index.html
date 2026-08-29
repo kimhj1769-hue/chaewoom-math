@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>채움수학학원 — 부천 상동 초·중등 소수정예 수학</title>
+<meta name="description" content="부천 상동 채움수학학원. 정원 6명 소수정예 과외식 수업, 개별 진도로 난이도 최상급까지. 20년 이상 지도 경험의 원장 직강. 무료 진단테스트 상담 환영.">
+<style>
+:root{
+  --navy:#1E3A5F;      /* 주조 — 깊고 안정된 네이비 */
+  --navy2:#16304F;
+  --ivory:#F7F5F0;     /* 배경 — 따뜻한 아이보리 */
+  --teal:#2E7D6E;      /* 포인트 — 차분한 청록 */
+  --gold:#B99245;      /* 절제된 골드(소량만) */
+  --dark:#26303B; --gray:#5E6B78; --line:#E6E2D9;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;color:var(--dark);background:#fff;line-height:1.7;}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px;}
+/* 헤더 */
+header{position:sticky;top:0;background:#fff;box-shadow:0 1px 6px rgba(30,58,95,.10);z-index:10;}
+.nav{display:flex;justify-content:space-between;align-items:center;height:62px;}
+.logo{font-size:21px;font-weight:800;color:var(--navy);letter-spacing:-0.5px;}
+.logo span{color:var(--teal);}
+.nav a.call{background:var(--navy);color:#fff;padding:9px 18px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;}
+/* 히어로 */
+.hero{background:linear-gradient(170deg,var(--navy) 55%,var(--navy2));color:#fff;padding:64px 0 58px;text-align:center;}
+.hero .badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#EAE6DC;font-weight:700;font-size:13.5px;padding:6px 16px;border-radius:4px;margin-bottom:20px;letter-spacing:.5px;}
+.hero h1{font-size:33px;line-height:1.4;margin-bottom:16px;font-weight:800;}
+.hero h1 em{font-style:normal;color:#E8C87A;}
+.hero p{color:#C6D2E0;font-size:16px;margin-bottom:30px;max-width:640px;margin-left:auto;margin-right:auto;}
+.btns a{display:inline-block;margin:6px;padding:14px 32px;border-radius:6px;text-decoration:none;font-weight:800;font-size:16px;}
+.btn-y{background:#fff;color:var(--navy);}
+.btn-o{border:1.5px solid rgba(255,255,255,.7);color:#fff;}
+/* 섹션 공통 */
+section{padding:58px 0;}
+section.alt{background:var(--ivory);}
+h2{font-size:25px;color:var(--navy);text-align:center;margin-bottom:8px;font-weight:800;}
+.sub{color:var(--gray);text-align:center;margin-bottom:36px;font-size:15px;}
+/* 강점 카드 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 20px;box-shadow:0 2px 8px rgba(30,58,95,.05);}
+.card .num{font-size:13px;color:var(--gold);font-weight:800;letter-spacing:1px;margin-bottom:8px;}
+.card h3{font-size:17.5px;color:var(--navy);margin-bottom:8px;}
+.card p{font-size:14px;color:var(--gray);}
+/* 수업 흐름 */
+.flow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 16px;width:170px;text-align:center;}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:14px;}
+.step h4{font-size:15px;color:var(--navy);margin-bottom:6px;}
+.step p{font-size:12.5px;color:var(--gray);line-height:1.55;}
+.arrow{align-self:center;color:#B9C4CF;font-size:18px;font-weight:700;}
+/* 커리큘럼 */
+.cur{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+.cur .box{background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line);}
+.cur .head{padding:14px;text-align:center;color:#fff;font-weight:800;font-size:16.5px;}
+.cur .h-el{background:var(--teal);}
+.cur .h-mid{background:var(--navy);}
+.cur ul{list-style:none;padding:20px 24px;}
+.cur li{padding:8px 0;font-size:14.5px;border-bottom:1px dashed var(--line);}
+.cur li:last-child{border:none;}
+.cur li b{color:var(--navy);}
+.cur-note{text-align:center;margin-top:18px;font-size:14px;color:var(--gray);}
+.cur-note b{color:var(--teal);}
+/* 원장 소개 */
+.teacher{display:flex;gap:30px;align-items:center;flex-wrap:wrap;justify-content:center;}
+.teacher .photo{width:170px;height:170px;border-radius:50%;background:#E7E3DA;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px;text-align:center;border:4px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.12);}
+.teacher .txt{max-width:520px;}
+.teacher .txt h3{color:var(--navy);font-size:20px;margin-bottom:10px;}
+.teacher .txt p{font-size:15px;color:var(--gray);margin-bottom:7px;}
+.quote{margin-top:14px;padding:16px 18px;background:var(--ivory);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;color:var(--dark);font-size:15px;}
+/* 입학 절차 */
+.enroll{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.enroll .e{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;width:250px;text-align:center;}
+.enroll .e .t{font-size:13px;color:var(--gold);font-weight:800;margin-bottom:6px;letter-spacing:1px;}
+.enroll .e h4{color:var(--navy);font-size:16.5px;margin-bottom:6px;}
+.enroll .e p{font-size:13.5px;color:var(--gray);}
+/* SNS */
+.sns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.sns a{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:13px 22px;text-decoration:none;color:var(--navy);font-weight:700;font-size:15px;}
+.sns a:hover{border-color:var(--teal);}
+/* 상담 */
+.contact{background:var(--navy);color:#fff;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sub{color:#C6D2E0;}
+.contact .info{font-size:17px;margin:7px 0;}
+.contact .info b{color:#E8C87A;}
+.map{margin-top:22px;background:#fff;border-radius:10px;padding:16px;color:var(--gray);font-size:14px;}
+footer{background:#12253F;color:#8DA0B5;text-align:center;padding:22px;font-size:12.5px;}
+/* 플로팅 전화 버튼(모바일 전환용) */
+.float-call{position:fixed;right:18px;bottom:18px;background:var(--teal);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:20;}
+@media(max-width:600px){.hero h1{font-size:25px;}.arrow{display:none;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">채움<span>수학학원</span></div>
+    <a class="call" href="tel:010-4782-6891">📞 상담 010-4782-6891</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">부천 상동 · 정원 6명 소수정예 · 원장 직강</div>
+    <h1>최고를 지향하는<br><em>채움수학학원</em>입니다</h1>
+    <p>수학 실력 향상에 자신 있는 학원입니다. 정원 6명 과외식 수업으로 아이마다 진도를 따로 설계하고,
+    기본부터 <b style="color:#E8C87A">난이도 최상급</b>까지 끌어올립니다. 20년 이상의 지도 경험으로
+    학부모님께서 원하시는 수업을 맞춰드립니다.</p>
+    <div class="btns">
+      <a class="btn-y" href="tel:010-4782-6891">무료 진단테스트 · 상담 예약</a>
+      <a class="btn-o" href="#about">학원 소개 보기</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>채움수학학원이 다른 이유</h2>
+    <p class="sub">많이 시키는 학원이 아니라, 제대로 채우는 학원입니다.</p>
+    <div class="cards">
+      <div class="card"><div class="num">01</div><h3>정원 6명 과외식 수업</h3><p>한 타임 최대 6명. 학원 수업의 체계와 과외의 밀착함을 함께 — 원장이 한 명 한 명의 풀이 과정을 직접 확인합니다.</p></div>
+      <div class="card"><div class="num">02</div><h3>개별 진도 설계</h3><p>같은 반에서도 아이마다 교재·진도·숙제가 다릅니다. 진단테스트로 시작점을 정확히 찾고, 아이의 속도로 갑니다.</p></div>
+      <div class="card"><div class="num">03</div><h3>난이도 최상급까지</h3><p>기본 개념부터 심화·최상위 문제까지. 상위권 도약이 필요한 아이도, 기초를 다져야 하는 아이도 각자의 목표까지 끌어올립니다.</p></div>
+      <div class="card"><div class="num">04</div><h3>20년 이상 지도 경험</h3><p>오랜 입시 지도 경험을 초등·중등 눈높이에 맞게 — 학부모님이 원하시는 방향으로 수업을 맞춰드립니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>수업은 이렇게 진행됩니다</h2>
+    <p class="sub">"꼼꼼히 관리합니다" 대신, 어떻게 관리하는지 보여드립니다.</p>
+    <div class="flow">
+      <div class="step"><div class="n">1</div><h4>진단테스트</h4><p>현재 실력과 빈 곳을 정확히 파악 (무료)</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="n">2</div><h4>개별 진도 설계</h4><p>아이에게 맞는 교재·진도·목표 설정</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="n">3</div><h4>과외식 수업</h4><p>풀이 과정을 직접 확인하는 밀착 지도</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="n">4</div><h4>오답·숙제 관리</h4><p>모르는 채 넘어가지 않도록 재확인</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="n">5</div><h4>학부모 소통</h4><p>학습 상황·테스트 결과를 정기적으로 안내</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum">
+  <div class="wrap">
+    <h2>과정 안내</h2>
+    <p class="sub">초등은 습관과 사고력을, 중등은 실력과 자신감을 채웁니다.</p>
+    <div class="cur">
+      <div class="box">
+        <div class="head h-el">초등부 (1~6학년)</div>
+        <ul>
+          <li><b>교과 완성</b> — 학교 진도 완전 이해 + 연산 습관 만들기</li>
+          <li><b>사고력·서술형</b> — 문장제를 스스로 읽고 푸는 힘</li>
+          <li><b>공부 습관</b> — 앉는 힘·숙제 습관부터 차근차근</li>
+          <li><b>중등 준비</b> — 준비된 아이는 선행까지 자연스럽게</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="head h-mid">중등부 (1~3학년)</div>
+        <ul>
+          <li><b>내신 대비</b> — 학교별 시험 흐름에 맞춘 대비</li>
+          <li><b>심화·최상위</b> — 상위권 도약을 위한 심화 훈련</li>
+          <li><b>개념 복구</b> — 구멍 난 이전 과정부터 메우고 전진</li>
+          <li><b>고등 연결</b> — 고등 수학이 두렵지 않게 준비</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cur-note">※ <b>고등부</b>도 소수정예로 운영합니다 — 상담 시 문의해 주세요.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>원장 소개</h2>
+    <p class="sub">아이들의 "모르겠어요"를 제일 반가워하는 선생님</p>
+    <div class="teacher">
+      <div class="photo">원장님 사진<br>(준비되면 교체)</div>
+      <div class="txt">
+        <h3>이지영 원장</h3>
+        <p>· 전) 목동 하이패스학원 부원장</p>
+        <p>· 20년 이상 초·중·고 수학 지도</p>
+        <div class="quote">"수학을 잘하는 아이보다, <b>수학이 무섭지 않은 아이</b>를 먼저 만듭니다.
+        개념이 잡히고 습관이 붙으면, 성적은 반드시 따라옵니다."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>등록 절차</h2>
+    <p class="sub">부담 없이 상담부터 시작하세요.</p>
+    <div class="enroll">
+      <div class="e"><div class="t">STEP 1</div><h4>전화·문자 상담</h4><p>아이 학년·상황을 알려주시면 상담 시간을 잡아드립니다.</p></div>
+      <div class="e"><div class="t">STEP 2</div><h4>무료 진단테스트</h4><p>현재 실력을 정확히 진단하고 결과를 함께 보며 상담합니다.</p></div>
+      <div class="e"><div class="t">STEP 3</div><h4>반 배정 · 수업 시작</h4><p>아이에게 맞는 시간·진도로 배정해 수업을 시작합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>학원 소식 · SNS</h2>
+    <p class="sub">수업 모습과 학원 소식을 SNS에서 만나보세요.</p>
+    <div class="sns">
+      <a href="https://www.instagram.com/chaewoom100" target="_blank">📷 인스타그램 @chaewoom100</a>
+      <a href="https://m.place.naver.com/place/1798045831/home" target="_blank">📍 네이버 플레이스</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>상담 안내</h2>
+    <p class="sub">진단테스트와 학습 상담은 무료입니다. 편하게 문의해 주세요.</p>
+    <p class="info">📞 전화 <b>010-4782-6891</b></p>
+    <p class="info">🕐 전화 주시면 상담 시간을 안내드립니다</p>
+    <div class="map">📍 경기 부천시 원미구 상동로117번길 31 (상동역 6번 출구 233m)<br>
+    <a href="https://m.place.naver.com/place/1798045831/home" style="color:var(--teal);font-weight:700;">네이버 지도에서 보기 →</a></div>
+  </div>
+</section>
+
+<footer>
+  채움수학학원 · 원장 이지영<br>
+  경기 부천시 원미구 상동로117번길 31 · TEL 010-4782-6891 · © 2026 채움수학학원
+</footer>
+
+<a class="float-call" href="tel:010-4782-6891" aria-label="전화 상담">📞</a>
+
+</body>
+</html>
